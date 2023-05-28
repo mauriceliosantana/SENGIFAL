@@ -10,4 +10,4 @@ O evento contou com um site feito por mim. O site conta com um belo carrossel de
 
 ## Como foi feito?
 
-O site foi feito usando as linguagens HTML, CSS e Javascript. O site também contou com o Bootstrap para o carrossel de imagens e o FontAwesome para os ícones.
+O site foi feito usando as linguagens HTML, CSS e Javascript. O site também contou com o Bootstrap para o carrossel de imagens e o FontAwesome para os ícones. O site é totalmente responsivo, adaptando-se em todos os dispositivos.
