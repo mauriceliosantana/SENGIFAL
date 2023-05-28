@@ -4,7 +4,7 @@ O SENGIFAL (Semana das Engenharias do IFAL) foi um evento organizado por alunos 
 
 O evento contou com um site feito por mim. O site conta com um belo carrossel de imagens, uma contagem regressiva, descrição do evento, convidados, programação dos três dias, aba de inscrição e patrocinadores. Dois detalhes que deve ser destacado são as funções criadas em JS para sumir a contagem regressiva e o botão de inscrição no tempo proposto.
 
-![SENGIFAL]("C:\Users\mauri\OneDrive\Imagens\1684537296172.jpg")
+![alt text](img/1684537296172.jpg)
 
 ## Como foi feito?
 
