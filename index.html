@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/Logo 2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>SENGIFAL - Semana da Engenharia do IFAL Pín</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/img/Logo.png" alt="">
+        </div>
+
+        <ul class="nav-list desktop">
+            <li><a href="#">Início</a></li>
+            <li><a href="#sobre">Sobre o Evento</a></li>
+            <li><a href="#programacao">Programação</a></li>
+            <li><a href="#convidados">Convidados</a></li>
+            <li><a href="#apoio">Patrocinadores</a></li>
+            <li><a href="#contato">Fale com a gente</a></li>
+        </ul>
+
+        <ul class="nav-list mobile">
+            <li><a href="">Início</a></li>
+            <li><a href="#sobre">Sobre o Evento</a></li>
+            <li><a href="#programacao">Programação</a></li>
+            <li><a href="#convidados">Convidados</a></li>
+            <li><a href="#apoio">Patrocinadores</a></li>
+            <li><a href="#contato">Fale com a gente</a></li>
+        </ul>
+
+        <i class="fa-solid fa-bars"></i>
+
+        
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/IDENTIDADE VISUAL SENGIFAL_page-0001.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/IDENTIDADE VISUAL SENGIFAL_page-0005.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/IDENTIDADE VISUAL SENGIFAL_page-0002.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- contagem regressiva -->
+    <div class="countdown">
+		<div class="timer">
+			<div>
+                <span class="days">00</span>
+                <p>Dias</p>
+            </div>
+			<div>
+                <span class="hours">00</span>
+                <p>Horas</p>
+            </div>
+			<div>
+                <span class="minutes">00</span>
+                <p>Minutos</p>
+            </div>
+			<div>
+                <span class="seconds">00</span>
+                <p>Segundos</p>
+            </div>
+		</div>
+	</div>
+
+    <div class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-header">
+                <h1>Sobre o Evento</h1>
+                <p>A <strong>Semana da Engenharia do IFAL - Campus Palmeira dos Índios</strong> é um evento que visa aprimorar as habilidades e conhecimentos dos profissionais de engenharia, com foco nas tecnologias emergentes. Com o tema <strong>"Transformando o mundo por meio da engenharia"</strong>, o evento conta com diversas atividades, como palestras, workshops, minicursos, oficinas, mesa redonda e desafios práticos. Os participantes terão a oportunidade de se atualizar quanto as inovações tecnológicas que estão transformando a indústria, além do aprimoramento de suas habilidades em áreas específicas da engenharia. O objetivo é fornecer uma visão abrangente do setor, desde as habilidades necessárias até as tecnologias emergentes que estão mudando a forma como construímos o mundo.</p>
+            </div>
+            
+            <div class="sobre-itens">
+                <div class="sobre-local">
+                    <h3>Onde</h3>
+                    <p>Palmeira dos Índios - AL</p>
+                </div>
+        
+                <div class="sobre-tempo">
+                    <h3>Quando</h3>
+                    <p>Dias 24, 25 e 26 de Maio</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="programacao" id="programacao">
+        <div class="programacao-header">
+            <h1>Programação</h1>
+        </div>
+
+        <ul class="programacao-dias">
+            <li class="dia-item"><a href="#day-1" onclick="mostrarProgramacaoDia('day-1')">Dia 24</a></li>
+            <li class="dia-item"><a href="#day-2" onclick="mostrarProgramacaoDia('day-2')">Dia 25</a></li>
+            <li class="dia-item"><a href="#day-3" onclick="mostrarProgramacaoDia('day-3')">Dia 26</a></li>
+        </ul>
+
+        <!-- Programação do Dia 24 -->
+        <div class="programacao-section visivel" id="day-1">
+            <div class="programacao-item">
+                <p class="item-hour">7h30 às 9h</p>
+                <p class="item-description">Credenciamento</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">9h às 10h</p>
+                <p class="item-description">Abertura Oficial</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">10h às 11h30</p>
+                <p class="item-description"><span>AMBOS</span> Palestra: P&D em Modelagem Multiescala, Homogeneização e Educação em Engenharia: Oportunidades e Tendências</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+               <p class="item-hour">13h às 17h</p>
+                <p class="item-description"><span>ELÉTRICA</span> Minicurso: Instalações Elétricas Prediais</p>
+                <p class="item-local">Lab 41</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 17h</p>
+                <p class="item-description"><span>CIVIL</span> Minicurso: Ftool</p>
+                <p class="item-local">Lab 70</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 17h</p>
+                <p class="item-description"><span>CIVIL</span> Minicurso: Análise de lajes</p>
+                <p class="item-local">Sala 30</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 17h</p>
+                <p class="item-description"><span>CIVIL</span> Minicurso: Dimensionamento de drenagem subsuperficial para rebaixamento de nível freático</p>
+                <p class="item-local">Sala 101</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 15h</p>
+                <p class="item-description"><span>ELÉTRICA</span> Oficina de modelagem e impressão 3D</p>
+                <p class="item-local">Espaço 4.0</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 17h</p>
+                <p class="item-description"><span>CIVIL</span> Minicurso:  Blocos sobre estacas</p>
+                <p class="item-local">Sala 103</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 17h</p>
+                <p class="item-description"><span>ELÉTRICA</span> Minicurso: Introdução ao EasyEda</p>
+                <p class="item-local">Lab 42</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 17h</p>
+                <p class="item-description">Programação complementar</p>
+                <p class="item-local">Auditório</p>
+            </div>
+        </div>
+
+        <!-- Programação do Dia 25 -->
+        <div class="programacao-section" id="day-2">
+            <div class="programacao-item">
+                <p class="item-hour">7h30 às 9h</p>
+                <p class="item-description"><span>AMBOS</span> Perfil do profissional para o mercado de trabalho na área de Energia Solar</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">8h às 10h</p>
+                <p class="item-description"><span>ELÉTRICA</span> Workshop:  Introdução à Robótica Educacional com ESP32</p>
+                <p class="item-local">Lab 46</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">9h às 10h</p>
+                <p class="item-description"><span>CIVIL</span> Palestra: Engenheiro Civil na mineração: quais as possibilidades de atuação?</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">10h15 às 11h15</p>
+                <p class="item-description"><span>AMBOS</span> Palestra: Cidades sustentáveis</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">11h15 às 12h</p>
+                    <p class="item-description"><span>AMBOS</span> Mesa Redonda: Empresas juniores (Sigma e Voltech)</p>
+                    <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 15h</p>
+                <p class="item-description"><span>CIVIL</span> Oficina: Revit</p>
+                <p class="item-local">Lab 66</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 15h</p>
+                <p class="item-description"><span>ELÉTRICA</span> Workshop: Introdução ao MATLAB</p>
+                <p class="item-local">Lab 70</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 15h</p>
+                <p class="item-description"><span>CIVIL</span> Workshop: Leitura e interpretação de projetos estruturais em concreto armado</p>
+                <p class="item-local">Sala 101</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 15h</p>
+                <p class="item-description"><span>CIVIL</span> Minicurso: Estabilidade de Taludes: uso do SLOPE/W</p>
+                <p class="item-local">Sala 66</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 17h</p>
+                <p class="item-description"><span>ELÉTRICA</span> MINICURSO: INTRODUÇÃO AOS SIMULADORES DIGITAIS DE CIRCUITOS ELETRÔNICOS PROTEUS E PSIM</p>
+                <p class="item-local">Lab 42</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">15:30h às 17h</p>
+                <p class="item-description"><span>CIVIL</span> Desafio dos taludes</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">15h30 às 17h</p>
+                <p class="item-description"><span>AMBOS</span> Palestra:  O protagonismo feminino no empreendedorismo</p>
+                <p class="item-local">Auditório</p>
+            </div>
+        </div>
+
+        <!-- Programação do Dia 26 -->
+        <div class="programacao-section" id="day-3">
+            <div class="programacao-item">
+                <p class="item-hour">8h às 9h30</p>
+                <p class="item-description">Mesa Redonda: Egressos de Engenharia Civil</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">9h30 às 10h30</p>
+                <p class="item-description">Homenagem aos Professores</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">10h30 às 12h</p>
+                <p class="item-description">Desafio Pontes de Macarrão</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">13h às 14h</p>
+                <p class="item-description"><span>CIVIL</span> Palestra: Aterro sanitário</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">14h às 15h30</p>
+                <p class="item-description"><span>CIVIL</span> Palestra: Concreto Betuminoso Usinado a Quente - CBUQ</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">14h às 15h30</p>
+                <p class="item-description"><span>ELÉTRICA</span> Workshop: Prototipagem Eletrônica e 3D</p>
+                <p class="item-local">Lab 46</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">15h30 às 16h</p>
+                <p class="item-description">Premiações e sorteios</p>
+                <p class="item-local">Auditório</p>
+            </div>
+            <div class="programacao-item">
+                <p class="item-hour">16h às 17h</p>
+                <p class="item-description">Atração cultural</p>
+                <p class="item-local">Auditório</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="convidados" id="convidados">
+        <div class="convidados-header">
+            <h1>Conheça os nossos convidados</h1>
+        </div>
+
+        <div class="convidados-container">
+            <div class="convidado-card">
+                <img src="img/profile/img_01.jpeg" alt="Exemplo">
+                <h3>Cláudio Cordeiro</h3>
+                <p>Analista e Desenvolvedor de Sistemas<br>Pós graduado em Redes Convergentes e Móveis<br>Técnico em Eletrônica<br>Técnico em Telecom<br>Técnico em Energias Renováveis</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_02.jpeg" alt="Exemplo">
+                <h3>Jennifer Torres</h3>
+                <p>Aluna do curso de Engenharia Elétrica - IFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_03.jpeg" alt="Exemplo">
+                <h3>Márcio Azevedo</h3>
+                <p>Graduado em Sistemas Elétricos pelo IFAL<br>Pós graduado em Engenharia de Manutenção e de Equipamentos<br>Mestre em Tecnologias Ambientais</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_04.jpeg" alt="Exemplo">
+                <h3>Wellington Barbosa</h3>
+                <p>Técnico em Eletrotécnica pelo IFAL<br>Aluno do curso de Engenharia Elétrica - IFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_05.jpeg" alt="Exemplo">
+                <h3>Arthur Pereira</h3>
+                <p>Técnico em Eletrotécnica pelo IFAL<br>Aluno do curso de Engenharia Elétrica - IFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_06.jpeg" alt="Exemplo">
+                <h3>Rodrigo Mero</h3>
+                <p>Graduado em Engenharia Civil pela UFAL<br>Especialista em Docência do Ensino Profissional pelo IFAL<br>Especialista em Engenharia de Software e Web pela Estácio<br>Mestre em Engenharia Estrutural pela UFAL<br>Doutorando em Engenharia Civil com ênfase em Estruturas e Materiais pela UFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_07.jpeg" alt="Exemplo">
+                <h3>Saulo Almeida</h3>
+                <p>Técnico em Eletrotécnica pelo IFAL<br>Aluno do curso de Engenharia Elétrica - IFAL<br>Bolsista do Oficinas 4.0<br>Membro do Grupo de Robótica do IFAL Campus Palmeira dos Índios</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_08.jpeg" alt="Exemplo">
+                <h3>Alan Fernandes</h3>
+                <p>Técnico em Eletrotécnica pelo IFAL<br>Aluno do curso de Engenharia Elétrica - IFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_09.jpeg" alt="Exemplo">
+                <h3>Márcio Bino</h3>
+                <p>Graduado em Engenharia Elétrica<br>Especialista em Educação<br>Mestre em Engenharia Elétrica<br>Coordenador do Curso Bacharelado em Engenharia Elétrica do IFAL Campus Palmeira dos Índios</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_10.jpeg" alt="Exemplo">
+                <h3>Cícero Barros</h3>
+                <p>Graduado em Engenharia Elétrica pelo CESMAC<br>Pós graduado em Engenharia Elétrica com ênfase em Instalações Elétricas Industriais pela Faculdade Única de Ipatinga - MG</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_11.jpg" alt="Exemplo">
+                <h3>Rafael Guillou</h3>
+                <p>Graduado em Engenharia Civil pela UFAL<br>Mestre em Engenharia Civil pela UFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_12.jpeg" alt="Exemplo">
+                <h3>Thamyrys Almeida</h3>
+                <p>Graduada em Engenharia Civil pela UFAL<br>Mestra em Estruturas pela UFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_13.png" alt="Exemplo">
+                <h3>Maria Frida Nunes Gomes</h3>
+                <p>Graduada em Engenharia Civil pela UFAL<br>Especialista em Gestão Ambiental pela UFAL<br>Diretora Técnica da Habitat Engenharia<br>Eng do Banco Mundial por 8 anos<br>Eng da Seinfra - Coordenadora da Reconstrucao dos Municípios da enchente de 2010 - 7 anos</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_14.jpeg" alt="Exemplo">
+                <h3>Ilames Jordan</h3>
+                <p>Técnico em Edificações pelo IFAL<br>Graduação em Engenharia Civil pelo IFAL<br>Mestrado do Programa de Pós-Graduação em Engenharia Civil da PUC/RJ<br>Doutorando no Programa de Pós-Graduação em Engenharia Civil da PUC/RJ</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_15.jpeg" alt="Exemplo">
+                <h3>Danúbia Teixeira</h3>
+                <p>Graduada em Engenharia Civil pela UFAL<br>Mestra em Engenharia Civil pela UFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_16.jpg" alt="Exemplo">
+                <h3>Jefferson Carlos</h3>
+                <p>Graduando em Engenharia Civil pelo IFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_17.jpeg" alt="Exemplo">
+                <h3>Rosa Tenório</h3>
+                <p>Presidente do CREA - AL<br>Graduada em Engenharia Civil pela UFAL<br>Mestra em Saneamento e Meio Ambiente pela UFMG</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_18.jpg" alt="Exemplo">
+                <h3>Eliédson Rafael de Carvalho</h3>
+                <p>Graduado em Engenharia Civil pelo IFAL<br>Graduação parcial em Engenharia Civil pelo Northern Virginia Community College<br>Especialista em Docência do Ensino Superior pela Faculdade de Ensino Regional Alternativa - FERA<br>Mestre em Tecnologias Ambientais pelo IFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_19.jpeg" alt="Exemplo">
+                <h3>Guedson Filho</h3>
+                <p>Aluno do curso de Engenharia Elétrica - IFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_20.jpeg" alt="Exemplo">
+                <h3>Elias Neto</h3>
+                <p>Técnico em Eletrotécnica pelo IFAL<br>Aluno do curso de Engenharia Elétrica - IFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_21.jpeg" alt="Exemplo">
+                <h3>Weslley Cândido</h3>
+                <p>Técnico em Eletrotécnica pelo IFAL<br>Aluno do curso de Engenharia Elétrica - IFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_22.jpeg" alt="Exemplo">
+                <h3>Tiago Souza</h3>
+                <p>Graduado em Licenciatura Plena em Matemática pela Universidade Estadual da Paraíba<br>Graduado em Engenharia Elétrica pela Universidade Federal de Campina Grande<br>Mestre em Engenharia Elétrica pela Universidade Federal de Campina Grande<br>Doutor em Engenharia Elétrica pela Universidade Federal de Campina Grande</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_23.jpeg" alt="Exemplo">
+                <h3>Bruno Henrique</h3>
+                <p>Graduado em Engenharia Civil<br>Especialista em Engenharia Ambiental e Saneamento Básico<br>Analista do MPAL - Área Engenharia Civil</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_24.jpeg" alt="Exemplo">
+                <h3>Islan Melo</h3>
+                <p>Técnico em Eletrotécnica pelo IFAL<br>Aluno do curso de Engenharia Elétrica - IFAL</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_25.jpeg" alt="Exemplo">
+                <h3>Felipe Amaral</h3>
+                <p>Graduado em Engenharia Civil pelo IFAL<br>Pós Graduado em Fiscalização de Obras Públicas<br>Mestrando em Tecologias Ambientais (IFAL)<br>Coordenador de Planejamento Integrado do Grupo Appian Capital Brazil</p>
+            </div><div class="convidado-card">
+                <img src="img/profile/img_26.jpg" alt="Exemplo">
+                <h3>Alex Rosa</h3>
+                <p>Arquiteto e urbanista, com experiência na área de planejamento urbano e habitação social<br>Mestre em Planejamento Urbano e Regional pela FAUUSP<br>Atual Coordenador de Programas do ONU Habitat para o projeto Visão Alagoas 2030</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_27.jpeg" alt="Exemplo">
+                <h3>João Marcos</h3>
+                <p>Técnologo em Redes de Computadores pelo IFAL<br>Graduado em Engenharia Civil pelo IFAL<br>Pós-graduando em Segurança do Trabalho no IBRA<br>Mestre em Engenharia Civil com ênfase em Estruturas pela UFAL<br>MBA em Estruturas e Fundações pelo IPOG<br>Coordenador de Projetos da ALTA Geotecnia<br></p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_28.jpg" alt="Exemplo">
+                <h3>Antônio Lúcio</h3>
+                <p>Graduado em Engenharia Civil pela UFJF/MG<br>Administrador de Empresas na Faculdade Mackenzie/SP<br>Dimensionamento de Pavimento pela ABPV<br>Coordenação de projetos de rodovias para o DER/SP e DER/BA<br>Coordenação da supervisão das obras de duplicação da AL-220</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_29.jpg" alt="Exemplo">
+                <h3>Felipe Rafael</h3>
+                <p>Aluno do curso de Engenharia Elétrica - IFAL<br>Membro do Grupo de Robótica do IFAL Campus Palmeira dos Índios</p>
+            </div>
+            <div class="convidado-card">
+                <img src="img/profile/img_30.jpg" alt="Exemplo">
+                <h3>Otávio dos Santos Rodrigues</h3>
+                <p>Aluno do curso de Engenharia Elétrica - IFAL<br>Membro do Grupo de Robótica do IFAL Campus Palmeira dos Índios</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="inscricao" id="inscricao">
+        <h1>Inscrição</h1>
+        <p>Faça sua inscrição</p>
+        <a id="btn-inscricao" target="_blank" href="https://www.even3.com.br/i-sengifal-339854/">Quero me inscrever</a>
+        <h3 class="msg-prazo-encerrado" id="msg-prazo-encerrado" style="display: none;">Inscrições encerradas</h3>
+    </div>
+
+    
+
+    <div class="apoio" id="apoio">
+        <div class="apoio-header">
+            <h1>Nossos patrocinadores</h1>
+        </div>
+
+        <div class="apoio-container">
+            <div class="apoio-card">
+                <img src="img/supporters/3dview.jpg" alt="3D View">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/agm geotecnia.jpg" alt="AGM Geotecnia">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/bella vida.jpg" alt="Bella Vida">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/dr nataly.jpg" alt="Dr Nataly Teixeira">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/emanuele sandrine.jpeg" alt="Emanuele Sandrine">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/ht construcao.png" alt="HT Construção">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/irmao cell.jpg" alt="Irmão Cell">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/jc churros.png" alt="JC Churros">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/Matheus miranda.png" alt="Matheus Miranda">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/mestre das locacoes.jpg" alt="Mestre das Locações">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/mouraço.jpg" alt="MourAço">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/oticas diniz.jpg" alt="Óticas Visão">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/Sicredi.png" alt="Sicredi">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/top autopecas.png" alt="Top Autopeças">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/top locadora.png" alt="Top Locadora">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/top-semfundo-dourada (1).png" alt="Top Autoescola">
+            </div>
+            <div class="apoio-card">
+                <img src="img/supporters/valedourado.jpg" alt="Valedourado">
+            </div>
+        </div>
+    </div>
+
+    <div class="contato" id="contato">
+        <div class="contato-header">
+            <h1>Fale com a gente</h1>
+            <h5>Todos os nossos contatos abaixo</h5>
+        </div>
+
+        <div class="contato-container">
+            <div class="contato-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Endereço</h3>
+                <p> Av. Alagoas, S/N - Palmeira de Fora,<br> Palmeira dos Índios - AL, 57608-180</p>
+            </div>
+            <div class="contato-item">
+                <i class="fa-regular fa-envelope"></i>
+                <h3>Email</h3>
+                <p>seng@ifalpalmeira.edu.br</p>
+            </div>
+            <div class="contato-item">
+                <i class="fa-brands fa-instagram"></i>
+                <h3>Instagram</h3>
+                <a href="https://www.instagram.com/sengifal.pin/" target="_blank" rel="noopener noreferrer">@sengifal.pin</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>I SENGIFAL - Semana da Engenharia do IFAL PÍn<br>&copy; Copyright <a target="_blank" href="https://api.whatsapp.com/send?phone=5587981297830">Mauricelio Santana</a>. <br>All Rights Reserved</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
